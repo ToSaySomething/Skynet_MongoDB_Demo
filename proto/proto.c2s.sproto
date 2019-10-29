@@ -1,0 +1,58 @@
+.account {
+	id 0 : string
+	pass 1 : string
+}
+.package {
+	type 0 : integer
+	session 1 : integer
+}
+
+create 1 {
+	request {
+		db 0 : string
+	}
+	response {
+		ok 0 : boolean
+	}
+}
+
+find 2 {
+	request {
+		id 0 : string
+	}
+	response {
+		ok 0 : boolean
+		person 1: *account
+	}
+}
+
+insert 3 {
+	request {
+		id 0 : string
+		pass 1 : string
+	}
+	response {
+		ok 0 : boolean
+	}
+}
+
+delete 4 {
+	request {
+		id 0 : string
+	}
+	response {
+		ok 0 : boolean
+	}
+}
+
+findone 5 {
+	request {
+		id 0 : string
+	}
+	response {
+		ok 0 : boolean
+		person 1: account
+	}
+}
+
+quit 6 {}
