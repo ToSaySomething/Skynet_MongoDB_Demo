@@ -10,7 +10,7 @@ skynet_mongodb_sproto
 3、config 的 path文档目录参考：云风 [skynet_sample](https://github.com/cloudwu/skynet_sample)  也可以自己修改很简单的
 
 4、我加了与mongodb交互的功能、也把sproto协议写出来了，主要的内容代码已注释
-mongodb的接口源码：lua-mongo.c 里面已经封装了bson decode 和 encode
+mongodb的接口源码：mongo.lua 里面已经封装了bson decode 和 encode
 	（使用参考test/testmongodb.lua）
 
 问题：其中有个有关watchdog的心跳包问题：
