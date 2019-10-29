@@ -10,10 +10,9 @@ skynet_mongodb_sproto
 3、config 的 path文档目录参考：云风 [skynet_sample](https://github.com/cloudwu/skynet_sample)  也可以自己修改很简单的
 
 4、我加了与mongodb交互的功能、也把sproto协议写出来了，主要的内容代码已注释
-mongodb的接口源码：mongo.lua 里面已经封装了bson decode 和 encode
-	（使用参考test/testmongodb.lua）
+     mongodb的接口源码：mongo.lua 里面已经封装了bson decode 和 encode
+（使用参考test/testmongodb.lua）
 
 问题：其中有个有关watchdog的心跳包问题：
     这里师傅跟我分析了一下，如果服务端每5s发心跳（云风的代码就是demo这样子写的），上万人的服务器是不是会炸掉呢？？ 所以这个心跳包的逻辑放客户端是不是更好一点？？
-
-更好的框架参考：skynet_sample/src/service_package.c （这个是云风大佬写的新的，更好用）
+    更好的框架参考：skynet_sample/src/service_package.c （这个是云风大佬写的新的，更好用）
