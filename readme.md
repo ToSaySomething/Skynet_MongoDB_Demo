@@ -1,4 +1,4 @@
-##skynet_mongodb_sproto##
+skynet_mongodb_sproto
 
 [代码地址](https://github.com/ToSaySomething/Skynet_MongoDB_Demo)
 自己写的一个服务端与客户端交互（sproto长连接）操作客户端的小demo
